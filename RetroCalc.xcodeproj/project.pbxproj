@@ -14,6 +14,7 @@
 		CA84C1071E56E6B200917B76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA84C1051E56E6B200917B76 /* LaunchScreen.storyboard */; };
 		CA84C1121E56E6B200917B76 /* RetroCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA84C1111E56E6B200917B76 /* RetroCalcTests.swift */; };
 		CA84C11D1E56E6B300917B76 /* RetroCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA84C11C1E56E6B300917B76 /* RetroCalcUITests.swift */; };
+		CA84C12B1E56E91400917B76 /* Open 24 Display St.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA84C12A1E56E91400917B76 /* Open 24 Display St.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		CA84C1181E56E6B300917B76 /* RetroCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetroCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA84C11C1E56E6B300917B76 /* RetroCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroCalcUITests.swift; sourceTree = "<group>"; };
 		CA84C11E1E56E6B300917B76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA84C12A1E56E91400917B76 /* Open 24 Display St.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Open 24 Display St.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				CA84C1101E56E6B200917B76 /* RetroCalcTests */,
 				CA84C11B1E56E6B300917B76 /* RetroCalcUITests */,
 				CA84C0FA1E56E6B200917B76 /* Products */,
+				CA84C12A1E56E91400917B76 /* Open 24 Display St.ttf */,
 			);
 			sourceTree = "<group>";
 		};
@@ -238,6 +241,7 @@
 				CA84C1071E56E6B200917B76 /* LaunchScreen.storyboard in Resources */,
 				CA84C1041E56E6B200917B76 /* Assets.xcassets in Resources */,
 				CA84C1021E56E6B200917B76 /* Main.storyboard in Resources */,
+				CA84C12B1E56E91400917B76 /* Open 24 Display St.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
