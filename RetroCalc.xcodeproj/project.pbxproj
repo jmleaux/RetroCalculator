@@ -15,6 +15,7 @@
 		CA84C1121E56E6B200917B76 /* RetroCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA84C1111E56E6B200917B76 /* RetroCalcTests.swift */; };
 		CA84C11D1E56E6B300917B76 /* RetroCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA84C11C1E56E6B300917B76 /* RetroCalcUITests.swift */; };
 		CA84C12B1E56E91400917B76 /* Open 24 Display St.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA84C12A1E56E91400917B76 /* Open 24 Display St.ttf */; };
+		CA84C12D1E572B0E00917B76 /* button6.wav in Resources */ = {isa = PBXBuildFile; fileRef = CA84C12C1E572B0E00917B76 /* button6.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CA84C11C1E56E6B300917B76 /* RetroCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroCalcUITests.swift; sourceTree = "<group>"; };
 		CA84C11E1E56E6B300917B76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA84C12A1E56E91400917B76 /* Open 24 Display St.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Open 24 Display St.ttf"; sourceTree = "<group>"; };
+		CA84C12C1E572B0E00917B76 /* button6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = button6.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				CA84C11B1E56E6B300917B76 /* RetroCalcUITests */,
 				CA84C0FA1E56E6B200917B76 /* Products */,
 				CA84C12A1E56E91400917B76 /* Open 24 Display St.ttf */,
+				CA84C12C1E572B0E00917B76 /* button6.wav */,
 			);
 			sourceTree = "<group>";
 		};
@@ -239,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA84C1071E56E6B200917B76 /* LaunchScreen.storyboard in Resources */,
+				CA84C12D1E572B0E00917B76 /* button6.wav in Resources */,
 				CA84C1041E56E6B200917B76 /* Assets.xcassets in Resources */,
 				CA84C1021E56E6B200917B76 /* Main.storyboard in Resources */,
 				CA84C12B1E56E91400917B76 /* Open 24 Display St.ttf in Resources */,
