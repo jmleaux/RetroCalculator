@@ -10,30 +10,21 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController {
-//    
-//    class Stack{
-//        var stackArray = [String]()
-//        //create push function
-//        //create pop function
-//        func push(stringToPush: String) {
-//            stackArray.append(stringToPush)
-//            
-//        }
-//    }
-//    
-    struct StringStack {
-        var items = [String]()
-        mutating func pushToStack(_ item: String) {
-            items.append(item)
-        }
-        mutating func popFromStack() -> String {
-            return items.removeLast()
-        }
-        mutating func countStack() -> Int {
-            return items.count
-        }
+
+struct Stack<Element> {
+    var items = [Element]()
+    mutating func pushToStack(_ item: Element) {
+        items.append(item)
     }
+    mutating func popFromStack() -> Element {
+        return items.removeLast()
+    }
+    mutating func countStack() -> Int {
+        return items.count
+    }
+}
+
+class ViewController: UIViewController {
     
     @IBOutlet weak var outputLbl: UILabel!
     
@@ -47,11 +38,22 @@ class ViewController: UIViewController {
         case Empty = "Empty"
     }
     
+//    var myStack: Stack<String>
+    
+    
+//    myStack.pushToStack("test")
+    
+    
+//    print("count of myStack items is \(myStack.countStack())")
+    
     var currentOperation = Operation.Empty
     var runningNumber = ""
     var leftValStr = ""
     var rightValStr = ""
     var result = ""
+    
+//    print("items in Stack: \(countStack())")
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,14 +72,20 @@ class ViewController: UIViewController {
         
     }
     
+    
+    // All the number buttons are assigned to the @IBAction below
+    // Every time user presses a number, this action is triggered
+    // The click sound plays, then the "runningNumber" is updated to append the new number that was pressed, and the outputLbl is updated with the new complete number
     @IBAction func numberPressed(sender: UIButton) {
         playSound()
-        
         runningNumber += "\(sender.tag)"
         outputLbl.text = runningNumber
     }
     
+    // Operator buttons only work if there is at least one entry in the stack AND there is a runningNumber (these operators all require two operands
+    // So...first thing to do is make sure that there are in fact two operands
     @IBAction func onDividePressed(sender: AnyObject) {
+        
         processOperation(operation: .Divide)
     }
     
@@ -93,7 +101,9 @@ class ViewController: UIViewController {
         processOperation(operation: .Add)
     }
     
-    @IBAction func onEqualPressed(sender: AnyObject) {
+    // If the Enter button is pressed, add runningNumber to the stack - but leave runningNumber alone
+    @IBAction func onEnterPressed(sender: AnyObject) {
+//        pushToStack(runningNumber)
         processOperation(operation: currentOperation)
     }
     

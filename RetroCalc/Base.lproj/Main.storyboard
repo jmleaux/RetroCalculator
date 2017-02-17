@@ -40,7 +40,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJT-p1-pkg">
-                                <rect key="frame" x="219" y="29.5" width="60" height="31.5"/>
+                                <rect key="frame" x="212.5" y="29.5" width="66.5" height="31.5"/>
                                 <fontDescription key="fontDescription" name="Open24DisplaySt" family="Open 24 Display St" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -234,7 +234,6 @@
                                                 <state key="normal" image="enter"/>
                                                 <connections>
                                                     <action selector="onEnterPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YFR-yG-TLs"/>
-                                                    <action selector="onEqualPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3jY-GK-uXj"/>
                                                 </connections>
                                             </button>
                                         </subviews>
