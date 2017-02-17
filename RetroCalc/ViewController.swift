@@ -11,16 +11,20 @@ import UIKit
 import AVFoundation
 
 
-struct Stack<Element> {
-    var items = [Element]()
-    mutating func pushToStack(_ item: Element) {
-        items.append(item)
+//struct Stack<Element> {
+//    var items = [Element]()
+//}
+
+struct Stack {
+    var stackItems = [String]()
+    mutating func push(_ item: String) {
+        stackItems.append(item)
     }
-    mutating func popFromStack() -> Element {
-        return items.removeLast()
+    mutating func pop() -> String {
+        return stackItems.removeLast()
     }
-    mutating func countStack() -> Int {
-        return items.count
+    func stackItemCount() -> Int {
+        return stackItems.count
     }
 }
 
@@ -38,22 +42,15 @@ class ViewController: UIViewController {
         case Empty = "Empty"
     }
     
-//    var myStack: Stack<String>
-    
-    
-//    myStack.pushToStack("test")
-    
-    
-//    print("count of myStack items is \(myStack.countStack())")
-    
     var currentOperation = Operation.Empty
     var runningNumber = ""
     var leftValStr = ""
     var rightValStr = ""
     var result = ""
+//    var myStack = Stack.self
+//    myStack.push("test")
     
-//    print("items in Stack: \(countStack())")
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,7 +69,15 @@ class ViewController: UIViewController {
         
     }
     
-    
+//    func pushToStack(_ item: Element) {
+//        items.append(item)
+//    }
+//    func popFromStack() -> Element {
+//        return items.removeLast()
+//    }
+//    func countStack() -> Int {
+//        return items.count
+//    }
     // All the number buttons are assigned to the @IBAction below
     // Every time user presses a number, this action is triggered
     // The click sound plays, then the "runningNumber" is updated to append the new number that was pressed, and the outputLbl is updated with the new complete number
