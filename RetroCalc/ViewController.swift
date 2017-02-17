@@ -11,8 +11,32 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
+//    
+//    class Stack{
+//        var stackArray = [String]()
+//        //create push function
+//        //create pop function
+//        func push(stringToPush: String) {
+//            stackArray.append(stringToPush)
+//            
+//        }
+//    }
+//    
+    struct StringStack {
+        var items = [String]()
+        mutating func pushToStack(_ item: String) {
+            items.append(item)
+        }
+        mutating func popFromStack() -> String {
+            return items.removeLast()
+        }
+        mutating func countStack() -> Int {
+            return items.count
+        }
+    }
     
     @IBOutlet weak var outputLbl: UILabel!
+    
     var btnSound: AVAudioPlayer!
     
     enum Operation: String {
@@ -112,6 +136,7 @@ class ViewController: UIViewController {
         }
     }
     
+
     
 }
 
