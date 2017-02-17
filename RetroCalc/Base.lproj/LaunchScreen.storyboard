@@ -37,6 +37,9 @@
                                     <constraint firstAttribute="width" constant="240" id="nLf-w4-cmg"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Retro-Calc" translatesAutoresizingMaskIntoConstraints="NO" id="KcB-FJ-yib">
+                                <rect key="frame" x="0.0" y="20" width="320" height="111"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -51,6 +54,9 @@
                             <constraint firstItem="vhA-kP-NIw" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Wx2-BK-KlV"/>
                             <constraint firstItem="Ly9-ES-YAP" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="cV7-uE-TtK"/>
                             <constraint firstAttribute="trailing" secondItem="Bfh-lq-MAN" secondAttribute="trailing" id="fES-0N-fA3"/>
+                            <constraint firstItem="KcB-FJ-yib" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="h6z-j7-8C9"/>
+                            <constraint firstItem="KcB-FJ-yib" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="n5S-NF-UCj"/>
+                            <constraint firstAttribute="trailing" secondItem="KcB-FJ-yib" secondAttribute="trailing" id="y4G-i7-30O"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -60,6 +66,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Retro-Calc" width="755" height="111"/>
         <image name="launchbg" width="1433" height="957"/>
         <image name="launchground" width="999" height="225"/>
         <image name="robot" width="786" height="402"/>

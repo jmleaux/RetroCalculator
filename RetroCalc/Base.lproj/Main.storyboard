@@ -248,6 +248,9 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="iSR-mI-eQo"/>
                                 </constraints>
                                 <state key="normal" image="clear"/>
+                                <connections>
+                                    <action selector="onClearPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="stE-aP-gkO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
